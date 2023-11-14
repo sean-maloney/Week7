@@ -7,8 +7,7 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        int x=1;
-        while(x==1) {
+        while(true) {
             try {
                 System.out.println("Please enter a number between 0 - 9 : ");
                 Scanner myscan = new Scanner(System.in);
@@ -22,7 +21,7 @@ public class Main {
                 //check if the number is between 0 and 9
                 if (myNum >= 0 && myNum <= 9) {
                     System.out.println("You entered " + myNum + "\n");
-                    x=2;
+                    break;
                 }
                 else {
                     System.out.println("Not a valid number\n");
