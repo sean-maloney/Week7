@@ -11,6 +11,16 @@ public class Main {
 
        //read user input as a string
         String input = myscan.nextLine();
+
+        //parse the input to an interger
+        int myNum = Integer.parseInt(input);
+
+        //check if the number is between 0 and 9
+        if (myNum >= 0 && myNum<=9) {
+            System.out.println("You entered " + myNum);
+        }
+        else{
+            System.out.println("Not a valid number");
         }
     }
 }
